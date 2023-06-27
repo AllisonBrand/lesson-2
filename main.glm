@@ -43,5 +43,7 @@ object load
     nominal_voltage 2401.7771;
 }
 
+modify load_116.constant_current_A_real (load_116.constant_power_A_real / load_116.nominal_voltage)
+modify load_116.constant_current_A_reac (load_116.constant_power_A_reac / load_116.nominal_voltage)
 
 #output "IEEE-123-voltage-profile.png" -t profile -l 10
