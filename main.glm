@@ -45,6 +45,4 @@ object load
     constant_current_A_reac (load_114.constant_power_A_reac*2 / load_116.nominal_voltage);
 }
 
-modify load_116.load_class A;
-
 #output "IEEE-123-voltage-profile.png" -t profile -l 10
